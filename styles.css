@@ -1,7 +1,12 @@
 /* Importar fuente estilo Apple (Inter) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Restablecimiento básico */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +23,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 24px 16px;
+  padding: 24px 16px 40px 16px;
   position: relative;
 }
 
@@ -271,17 +276,27 @@ html {
   width: 100%;
   max-width: 640px;
   border: none;
-  height: 2700px;
+  height: 2550px;
+}
+
+.background-blobs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
 @media (min-width: 640px) {
   .form-iframe {
-    height: 2300px;
+    height: 2100px;
   }
 }
 
 @media (min-width: 768px) {
   .form-iframe {
-    height: 2027px;
+        height: 1850px;
   }
 }
